@@ -1,0 +1,88 @@
+using System;
+
+namespace PExerc_
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Pessoa pessoaUm = new Pessoa();
+            Pessoa pessoaDois = new Pessoa();
+            Pessoa pessoaTres = new Pessoa();
+
+
+            //PESSOA
+            PessoaUm(pessoaUm);
+            PessoaDois(pessoaUm);
+            PessoaTres(pessoaUm);
+        }
+
+        private static void PessoaTres(Pessoa pessoaUm)
+        {
+            //NOME
+            Console.WriteLine("Escreva seu nome completo: \n");
+            pessoaUm.setNome(Console.ReadLine());
+            Console.WriteLine($"\nSeu nome é {pessoaUm.getNome()}");
+
+            //DATA DE NASCIMENTO
+            Console.WriteLine("Qual sua data de nascimento? (no formato: dd/mm/aaaa)\n");
+            pessoaUm.setData(Console.ReadLine());
+            Console.WriteLine($"\nO dia do seu nascimento é {pessoaUm.getData()}");
+
+            //CPF
+            Console.WriteLine("Qual o número do seu documento? (no formado 000.000.000-00)\n");
+            pessoaUm.setDoc(Console.ReadLine());
+            Console.WriteLine($"\nSeu CPF é {pessoaUm.getDoc()}");
+
+            //NUMERO DE CELULAR
+            Console.WriteLine("Qual o número do seu celular? (no formato (XX)XXXXX-XXXX)\n");
+            pessoaUm.setNumero(Console.ReadLine());
+            Console.WriteLine($"\nO número do seu celular é {pessoaUm.getNumero()}");
+        }
+        private static void PessoaDois(Pessoa pessoaDois)
+        {
+            //NOME
+            Console.WriteLine("Escreva seu nome completo: ");
+            pessoaDois.setNome(Console.ReadLine());
+            Console.WriteLine($"Seu nome é {pessoaDois.getNome()}");
+
+            //DATA DE NASCIMENTO
+            Console.WriteLine("Qual sua data de nascimento? (no formato: dd/mm/aaaa)");
+            pessoaDois.setData(Console.ReadLine());
+            Console.WriteLine($"O dia do seu nascimento é {pessoaDois.getData()}");
+
+            //CPF
+            Console.WriteLine("Qual o número do seu documento? (no formado 000.000.000-00)");
+            pessoaDois.setDoc(Console.ReadLine());
+            Console.WriteLine($"Seu CPF é {pessoaDois.getDoc()}");
+
+
+            //NUMERO DE CELULAR
+            Console.WriteLine("Qual o número do seu celular? (no formato (XX)XXXXX-XXXX)");
+            pessoaDois.setNumero(Console.ReadLine());
+            Console.WriteLine($"O número do seu celular é {pessoaDois.getNumero()}");
+        }
+        private static void PessoaUm(Pessoa pessoaTres)
+        {
+            //NOME
+            Console.WriteLine("Escreva seu nome completo: ");
+            pessoaTres.setNome(Console.ReadLine());
+            Console.WriteLine($"Seu nome é {pessoaTres.getNome()}");
+
+            //DATA DE NASCIMENTO
+            Console.WriteLine("Qual sua data de nascimento? (no formato: dd/mm/aaaa)");
+            pessoaTres.setData(Console.ReadLine());
+            Console.WriteLine($"O dia do seu nascimento é {pessoaTres.getData()}");
+
+            //CPF
+            Console.WriteLine("Qual o número do seu documento? (no formado 000.000.000-00)");
+            pessoaTres.setDoc(Console.ReadLine());
+            Console.WriteLine($"Seu CPF é {pessoaTres.getDoc()}");
+
+            //NUMERO DE CELULAR
+            Console.WriteLine("Qual o número do seu celular? (no formato (XX)XXXXX-XXXX)");
+            pessoaTres.setNumero(Console.ReadLine());
+            Console.WriteLine($"O número do seu celular é {pessoaTres.getNumero()}");
+        }
+    }
+}
