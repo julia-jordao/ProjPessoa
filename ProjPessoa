@@ -13,8 +13,8 @@ namespace PExerc_
 
             //PESSOA
             PessoaUm(pessoaUm);
-            PessoaDois(pessoaUm);
-            PessoaTres(pessoaUm);
+            PessoaDois(pessoaDois);
+            PessoaTres(pessoaTres);
         }
 
         private static void PessoaTres(Pessoa pessoaUm)
